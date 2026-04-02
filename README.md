@@ -30,6 +30,7 @@ If no time unit is provided, it is counted as minutes.
 
 ![](./timer-example.gif)
 
+This is based on the work of Yuri Mazursky, check out his stuff or buy him a coffee.  I just added the Swift Menubar visual.
 ## Check out other workflows
 ### [String Multitool](https://github.com/colomolo/alfred-string-multitool)
 Tools for string manipulation and transformation.
