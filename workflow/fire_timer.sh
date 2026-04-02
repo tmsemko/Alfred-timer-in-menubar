@@ -12,4 +12,7 @@ variables=$(./get_timer_vars.js "$timer_id" "$json")
 
 ./update_timers.js "$timer_id" "$variables" "$json" > "${alfred_workflow_cache}/timers.json"
 
+# Refresh/stop menubar countdown
+./launch_menubar.sh &
+
 printf "%s" "$variables"

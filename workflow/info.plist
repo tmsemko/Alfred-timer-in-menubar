@@ -1097,6 +1097,9 @@ timestamp=$(./calculate_timestamp.js "$timer_seconds")
 
 ./add_intervals_timer.js "$timestamp" "$1" "$json" &gt; "${alfred_workflow_cache}/timers.json"
 
+# Launch/refresh menubar countdown
+./launch_menubar.sh &amp;
+
 printf '{"alfredworkflow": {"arg": "", "variables": {"timer_id": "%s"} } }' "$timestamp"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
